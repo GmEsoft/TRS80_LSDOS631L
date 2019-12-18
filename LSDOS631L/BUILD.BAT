@@ -13,8 +13,8 @@ echo.
 echo Source files are on disks :1 (L631UTL.DSK) and :2 (L631SYS.DSK).
 echo Output files are on disk :3 (L631BIN.DSK).
 echo.
-echo Language customization is done in LOWCORE/ASM (eg: use -1 to activate FRENCH).
-echo Logo customization is done in SYSRES/ASM.
+echo Language customization and version selection are now done in 
+echo DOSDEFS/ASM:1 ; logo customization is done in SYSRES/ASM:2.
 echo.
 echo When job is complete, type
 echo   EXIT

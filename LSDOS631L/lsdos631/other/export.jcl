@@ -1,0 +1,1 @@
+. EXPORT/JCL script to export all source files //include EXPCMDS/JCL//include EXPLIBS/JCL//include EXPREST/JCL//include EXPSYSF/JCL//include EXPUTIL/JCL//EXIT

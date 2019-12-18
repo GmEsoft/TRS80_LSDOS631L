@@ -1,1 +1,0 @@
-@MOD2	EQU	00		; Set MOD2 false@MOD4	EQU	-1		; Set MOD4 true;@DOSVER	EQU	631		; Set DOS Version 6.3.1@DOSLVL	EQU	'L'		; Set DOS Level L(-2079) or H(-2011)	END
