@@ -1,0 +1,58 @@
+LS-DOS 6.3.1 Source Code - International Versions Add-On
+========================================================
+
+Copyright 1982-1984, 1986, 1990 by MISOSYS, Inc.
+
+The permission statement from Tim Mann's web page says the following
+about the MISOSYS software available for download:
+
+=====================================================================
+Roy Soltoff holds the copyright to the software and documentation in 
+the list below; notices that name other authors are outdated. Roy 
+grants free permission to everyone to download and use this software 
+and documentation and to redistribute it to others, provided this 
+notice is retained. All other rights are reserved.
+=====================================================================
+
+Typed in by Michel Bernard (michel.bernard@icloud.com)
+Changes are copyright 2015 Michel Bernard.
+
+
+This document contains further instructions to build international 
+(French & German) versions of LS-DOS 6.3.1 using the original package
+from Tim Mann and Pete Cervasio.
+
+
+Needed are all stuff required to build the American version of LS-DOS
+6.3.1 plus the source file KIDVRFG.ASM containing the keyboard mappings
+for French (azerty) and German (quertz) keyboards. This file can be
+obtained from "LS-DOS 6.3.1 Source Code Restoration Project", thanks
+Frank Durda IV.
+(http://nemesis.lonestar.org/computers/tandy/software/os/logical_systems/lsdos6/src631/index.html).
+
+
+You will need to import KIDVRFG.ASM into drive :2 using the following
+command from a DOS prompt:
+
+IMPORT -N KIDVRFG.ASM KIDVRFG/ASM:2
+
+
+Then the LOWCORE/ASM file needs to be modified to include the new
+driver source KIDVRFG/ASM; include the following lines just after the
+two lines "GERM    EQU     nn" (lines 187 and 191):
+
+*GET    KIDVRFG
+
+
+Now, you can activate the German or French by changing line 23 or 24
+(not both) to:
+
+@GERMAN EQU     -1
+@FRENCH EQU     -1
+
+
+That's it.  Enjoy !
+
+Best regards,
+
+Michel Bernard (michel.bernard@icloud.com)

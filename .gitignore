@@ -1,0 +1,5 @@
+/LSDOS631L/lsdos631/cmdfiles
+/LSDOS631L/lsdos631/libcmds/*.bak
+*.bak
+*.equ
+*.prn

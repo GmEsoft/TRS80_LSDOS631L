@@ -1,0 +1,1 @@
+;CLIENT/ASM - file to establish sign-on headers;	DB	' - 6.3.1 - Copyright 1982/83/84/86/90 by MISOSYS, Inc.,       ',0AH	DB	'All Rights Reserved. Unauthorized duplication is prohibited.  ',0AH,0DH

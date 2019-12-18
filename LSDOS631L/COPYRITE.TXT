@@ -1,0 +1,6 @@
+Roy Soltoff holds the copyright to all the software and documentation
+in this ZIP archive.  (Any copyright notices that name other owners
+are outdated; Roy purchased the copyrights from them.)  Roy grants
+free permission to everyone to download and use this software and
+documentation and to redistribute it to others, provided this notice
+is retained.  All other rights are reserved.

@@ -1,14 +1,3 @@
-# LSDOS631L
-
-TRS-80 LS-DOS 6.3.1 Level L source files with French and German keyboard drivers, dates support up to 2079
-----------------------------------------------------------------------------------------------------------
-
-This repository contains the source files to build a working version of LS-DOS 6.3.1 Level L.
-
-The original source files come from the archive `Source code for LS-DOS 6.3.1H (19xx)(-)[DSK]` 
-and were made available by Peter W. Cervasio. Here is the text of the HowTo.txt notice included in the archive:
-
-```
 LS-DOS 6.3.1 Source Code
 ========================
 
@@ -221,64 +210,3 @@ That's it.
 
 Best regards,
 Pete Cervasio (cervasio@airmail.net)
-```
-
-Pete Cervasio's archive corresponds to the US flavor of LS-DOS 6.3.1H for Models 4
-and 4P.
-
-I incorporated the support for the French and German keyboard drivers (`KIDVRFG/ASM`) 
-taken from "LS-DOS 6.3.1 Source Code Restoration Project", thanks Frank Durda IV.
-(http://nemesis.lonestar.org/computers/tandy/software/os/logical_systems/lsdos6/src631/index.html).
-
-```
-[Copyright 1999,2002,2004 Frank Durda IV, All Rights Reserved.
-Mirroring of any material on this page in any form is expressly prohibited.
-The official web site for this material is:  http://nemesis.lonestar.org
-Contact this address for use clearances: clearance at nemesis.lonestar.org
-Comments and queries to this address: web_software_2011 at nemesis.lonestar.org]
-```
-
-I also incorporated the changes by Matthew Reed, converting his patch files to
-Z-80 code with conditional assembly. This corresponds to LS-DOS 6.3.1L, and allows for
-date support up to 31-12-2079.
-
-To select the version level (H or L) and the keyboard language (US/FR/GE), I added a
-configuration file `DOSDEFS/ASM` where the conditional assembly flags can be configured.
-
-```
-@MOD2	EQU	00		; Set MOD2 false
-@MOD4	EQU	-1		; Set MOD4 true
-;
-@DOSVER	EQU	631		; Set DOS Version 6.3.1
-@DOSLVL	EQU	'L'		; Set DOS Level L(-2079) or H(-2011)
-;
-;	Define switches for international or domestic
-;
-@GERMAN	EQU	0		; -1 to select German keyboard layout
-@FRENCH	EQU	0		; -1 to select French keyboard layout
-;
-	END
-```
-
-I also added the missing `END` statements at the end of the `/ASM` files. This was causing
-errors during assembly when those files were included using `*GET` statements.
-
-
-The source files are packaged both in plain ASCII files in the 
-folder `lsdos631` and in DMK disk image files:
-- `L631BOOT.DSK`: the LS-DOS 6.3.1 boot disk also containing the Misosys `MRAS` assembler
-and some other utilities, mounted as `:0`;
-- `L631UTL.DSK`: the source files for utilities, mounted as `:1` at BUILD and GET time;
-- `L631SYS.DSK`: the source files for utilities, mounted as `:2` at BUILD time;
-- `L631BIN.DSK`: the disk that will contain the generated binaries, mounted as `:3` at BUILD and GET time;
-- `L631NEW.DSK`: a bootable LS-DOS 6.3.1 disk where the new binaries will be transfered, mounted as `:2` at GET time.
-
-
-(tbc)
-
-
-That's it.  Enjoy !
-
-Best regards,
-
-Michel Bernard (michel.bernard@icloud.com)

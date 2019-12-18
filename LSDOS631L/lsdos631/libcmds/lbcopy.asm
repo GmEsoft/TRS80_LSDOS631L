@@ -1,0 +1,1 @@
+; LBCOPY/ASM - Copy/Append commands	TITLE	<COPY/APPEND - LSDOS 6.3>;*GET	SVCMAC			; System SVC macros*GET	VALUES			; Misc equates;EL	EQU	30		; Erase lineBL	EQU	29		; Beginning of line@INIT	EQU	58		; @INIT Svc #@OPEN	EQU	59		; @OPEN Svc #BREAK	EQU	80H		; Break character;	ORG	2400H;*GET	LBCOPYA*GET	LBCOPYB;;	END	COPY

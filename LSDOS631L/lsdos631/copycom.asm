@@ -1,0 +1,1 @@
+; COPYCOM/ASM - File for Copyright COMment block	COM	'<(C) 1982-4,6,90 MISOSYS>';
