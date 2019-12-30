@@ -1,4 +1,8 @@
-/LSDOS631L/lsdos631/cmdfiles
+/LSDOS631L/lsdos631/cmdfiles/*.CIM
+/LSDOS631L/lsdos631/cmdfiles/*.CMD
+/LSDOS631L/lsdos631/cmdfiles/*.DCT
+/LSDOS631L/lsdos631/cmdfiles/*.DVR
+/LSDOS631L/lsdos631/cmdfiles/*.FLT
 /LSDOS631L/lsdos631/libcmds/*.bak
 *.bak
 *.equ
