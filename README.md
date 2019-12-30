@@ -1,11 +1,12 @@
-# LSDOS631L
+LSDOS631L
+=========
 
 TRS-80 LS-DOS 6.3.1 Level L source files with French and German keyboard drivers, dates support up to 2079
 ----------------------------------------------------------------------------------------------------------
 
 This repository contains the source files to build a working version of LS-DOS 6.3.1 Level L.
 
-The original source files come from the archive `Source code for LS-DOS 6.3.1H (19xx)(-)[DSK]` 
+The original source files come from the archive `Source code for LS-DOS 6.3.1H (19xx)(-)[DSK]`
 and were made available by Peter W. Cervasio. Here is the text of the HowTo.txt notice included in the archive:
 
 ```
@@ -18,10 +19,10 @@ The permission statement from Tim Mann's web page says the following
 about the MISOSYS software available for download:
 
 =====================================================================
-Roy Soltoff holds the copyright to the software and documentation in 
-the list below; notices that name other authors are outdated. Roy 
-grants free permission to everyone to download and use this software 
-and documentation and to redistribute it to others, provided this 
+Roy Soltoff holds the copyright to the software and documentation in
+the list below; notices that name other authors are outdated. Roy
+grants free permission to everyone to download and use this software
+and documentation and to redistribute it to others, provided this
 notice is retained. All other rights are reserved.
 =====================================================================
 
@@ -40,17 +41,17 @@ The files in this package are the complete source code to the LS-DOS
 version 6.3.1 operating system for the TRS-80 Model 4.  I started by
 typing in the source listings from "The Source".  I wound up moving
 to LS-DOS 6.3.1 in the middle of the first part of the SYSx/ASM set of
-files.  I also realized that I should be using MISOSYS' PRO-DUCE to 
+files.  I also realized that I should be using MISOSYS' PRO-DUCE to
 generate the opcodes, and then massaging the resulting /ASM files until
-they have meaningful labels and comments.  For the most part, the 
+they have meaningful labels and comments.  For the most part, the
 comments from "The Source", volumes 1 through 3, are what you will see,
-except I may have changed the wording somewhat.  When I was doing this 
-I had NO idea that it would wind up on Tim Mann's web page with the 
+except I may have changed the wording somewhat.  When I was doing this
+I had NO idea that it would wind up on Tim Mann's web page with the
 rest of the MISOSYS software.  Because of that, I was not strict in
 my typing of the comments, and didn't make sure that every single
 line had the exact same wording as "The Source".  Where there are
 major changes in version 6.3.x, as compared to what was listed for
-version 6.2, I have tried to comment the code as well as I can figure 
+version 6.2, I have tried to comment the code as well as I can figure
 it out.
 
 There may be a few places where a piece of code says isn't commented
@@ -62,22 +63,22 @@ These flag the start and end of code that's different from the code
 listed in "The Source".  Not every change has this flag, though.
 
 Several files have much more commenting than the original listing had.
-This is especially true of the SYSINFO sector in SYSRES/ASM where I 
-have documented how backup-limited diskettes work.  This was done 
+This is especially true of the SYSINFO sector in SYSRES/ASM where I
+have documented how backup-limited diskettes work.  This was done
 for informational purposes only, by the way.
 
 In addition, I have included the new logo which I use on my own system.
-If you look in SYSRES/ASM and change the equate as documented there, 
+If you look in SYSRES/ASM and change the equate as documented there,
 you can try out my changes.  They don't adversely affect the operation
 of the system in any way, as far as I have been able to tell.  It just
 makes the bootup look a little nicer.  Some may have flashbacks to the
 boot screen of DOSPLUS, but that's their problem.
 
 But wait, there's more!  As an extra added bonus for downloading now,
-I have included the /JCL files I used to reassemble the operating 
-system under Jeff Vavasour's wonderful Model 4 emulator (which is 
-available from Computer News 80).  These JCL files can route the 
-assembler's listing to /PRN files and then export them to MSDOS as 
+I have included the /JCL files I used to reassemble the operating
+system under Jeff Vavasour's wonderful Model 4 emulator (which is
+available from Computer News 80).  These JCL files can route the
+assembler's listing to /PRN files and then export them to MSDOS as
 each file is completed, if you choose.  You'll probably need to do
 some editing of them to reflect your systems directory structure.
 
@@ -177,7 +178,7 @@ From a DOS ready prompt, enter "DO BUILD631".  The parameters this
 If you didn't supply the (ALL) parameter, you'll want to enter the
 command "DO BUILDLIB" to assemble the files that make up the SYS6, SYS7
 and SYS8 library overlays and generate the ISAM files using my
-BLDLIBS/CMD program.  There is some documentation on the BLDLIBS 
+BLDLIBS/CMD program.  There is some documentation on the BLDLIBS
 program, if you want to know more about it.  See the file BLDLIBS/TXT
 for information.  You'll also need to "DO BUILDUTL" to assemble all of
 the system utilities.
@@ -226,7 +227,7 @@ Pete Cervasio (cervasio@airmail.net)
 Pete Cervasio's archive corresponds to the US flavor of LS-DOS 6.3.1H for Models 4
 and 4P.
 
-I incorporated the support for the French and German keyboard drivers (`KIDVRFG/ASM`) 
+I incorporated the support for the French and German keyboard drivers (`KIDVRFG/ASM`)
 taken from "LS-DOS 6.3.1 Source Code Restoration Project", thanks Frank Durda IV.
 (http://nemesis.lonestar.org/computers/tandy/software/os/logical_systems/lsdos6/src631/index.html).
 
@@ -264,7 +265,7 @@ I also added the missing `END` statements at the end of the `/ASM` files. This w
 errors during assembly when those files were included using `*GET` statements.
 
 
-The source files are packaged both in plain ASCII files in the 
+The source files are packaged both in plain ASCII files in the
 folder `lsdos631` and in DMK disk image files:
 - `L631BOOT.DSK`: the LS-DOS 6.3.1 boot disk also containing the Misosys `MRAS` assembler
 and some other utilities, mounted as `:0`;
