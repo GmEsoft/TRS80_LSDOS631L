@@ -7,3 +7,5 @@
 *.bak
 *.equ
 *.prn
+/LSDOS631L/lsdos631/cmdfiles/*.dasm
+/LSDOS631L/lsdos631/cmdfiles/*.HEX
