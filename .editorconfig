@@ -1,0 +1,22 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Matches multiple files with brace expansion notation
+[*.{c,cpp,h}]
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+# Matches multiple files with brace expansion notation
+[*.{asm,ASM,inc,INC,s03,S03}]
+charset = utf-8
+indent_style = tab
+indent_size = 8
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
