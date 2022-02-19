@@ -7,7 +7,7 @@ TRS-80 LS-DOS 6.3.1 Level L source files with French and German keyboard drivers
 This repository contains the source files to build a working version of LS-DOS 6.3.1 Level L.
 
 The original source files come from the archive `Source code for LS-DOS 6.3.1H (19xx)(-)[DSK]`
-and were made available by Peter W. Cervasio. Here is the text of the HowTo.txt notice included in the archive:
+and were made available by Peter W. Cervasio. Here is the text of the `HowTo.txt` notice included in the archive:
 
 ```
 LS-DOS 6.3.1 Source Code
@@ -247,18 +247,18 @@ To select the version level (H or L) and the keyboard language (US/FR/GE), I add
 configuration file `DOSDEFS/ASM` where the conditional assembly flags can be configured.
 
 ```
-@MOD2	EQU	00		; Set MOD2 false
-@MOD4	EQU	-1		; Set MOD4 true
+@MOD2   EQU     00              ; Set MOD2 false
+@MOD4   EQU     -1              ; Set MOD4 true
 ;
-@DOSVER	EQU	631		; Set DOS Version 6.3.1
-@DOSLVL	EQU	'L'		; Set DOS Level L(-2079) or H(-2011)
+@DOSVER EQU     631             ; Set DOS Version 6.3.1
+@DOSLVL EQU     'L'             ; Set DOS Level L(-2079) or H(-2011)
 ;
-;	Define switches for international or domestic
+;       Define switches for international or domestic
 ;
-@GERMAN	EQU	0		; -1 to select German keyboard layout
-@FRENCH	EQU	0		; -1 to select French keyboard layout
+@GERMAN EQU     0               ; -1 to select German keyboard layout
+@FRENCH EQU     0               ; -1 to select French keyboard layout
 ;
-	END
+        END
 ```
 
 I also added the missing `END` statements at the end of the `/ASM` files. This was causing
