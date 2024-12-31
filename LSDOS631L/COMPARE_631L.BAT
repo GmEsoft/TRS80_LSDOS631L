@@ -20,4 +20,4 @@ echo and then proceed with GET.BAT.
 echo.
 pause
 echo Running emulator
-@start ..\simz80 /t:4 /h:..\model4 /d:L631BOOT.dsk /d:L631UTL.dsk /d:LD4-631L.dsk /d:L631BIN.dsk /k:1000 /q:10000 /e+1
+@start /wait ..\simz80 /t:4 /h:..\model4 /d:L631BOOT.dsk /d:L631UTL.dsk /d:LD4-631L.dsk /d:L631BIN.dsk /k:1000 /q:+ /e+1

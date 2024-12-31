@@ -22,5 +22,5 @@ echo and then proceed with COMPARE.BAT.
 echo.
 pause
 echo Running emulator
-@start /wait ..\simz80 /t:4 /h:..\model4 /d:L631BOOT.dsk /d:L631UTL.dsk /d:L631SYS.dsk /d:L631BIN.dsk /k:1000 /q:20000 /e:+1
+@start /wait ..\simz80 /t:4 /h:..\model4 /d:L631BOOT.dsk /d:L631UTL.dsk /d:L631SYS.dsk /d:L631BIN.dsk /k:1000 /q:+ /e:+1
 echo Job done.
