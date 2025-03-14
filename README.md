@@ -277,6 +277,9 @@ and some other utilities, mounted as `:0`;
 
 (tbc)
 
+**Breaking News**: I'm working on a version of LS-DOS 6.3.1 Level L for Model II, with
+support of dates up to 2079, and incorporating all fixes since Level A.
+
 
 That's it.  Enjoy !
 
